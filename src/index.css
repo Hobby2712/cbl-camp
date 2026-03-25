@@ -620,10 +620,11 @@ ul {
   margin-top: 2rem;
   padding: 1.5rem 3rem 6rem;
   max-width: 920px;
-  background: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(0.5px);
-  -webkit-backdrop-filter: blur(0.5px);
-  border-radius: 1.5rem
+  background: rgba(0, 0, 0, 0.52);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3)
 }
 
 .hero-badge {
@@ -1810,9 +1811,9 @@ ul {
 
   .hero-content {
     margin-top: 0rem;
-    background: rgba(0, 0, 0, 0.12);
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     padding: 1.2rem 1.5rem 3rem;
   }
 
