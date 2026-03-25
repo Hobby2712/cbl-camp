@@ -1,15 +1,15 @@
 /* ===== CSS VARIABLES – SUMMER SHINE ===== */
 :root {
-  --red: #c1121f;
-  --red-mid: #e63946;
-  --orange: #f4a261;
-  --gold: #ffd166;
-  --yellow: #ffb703;
-  --dark: #1a0a00;
-  --dark-mid: #2d1200;
-  --warm-dark: #3d1a00;
+  --red: #c4136e;
+  --red-mid: #e84840;
+  --orange: #f07820;
+  --gold: #f5c000;
+  --yellow: #f5c000;
+  --dark: #1a0507;
+  --dark-mid: #2d0a18;
+  --warm-dark: #3d1020;
   --white: #ffffff;
-  --off-white: #fff9f0;
+  --off-white: #fdf0e8;
   --text-dark: #1c1c1c;
   --text-mid: #4a4a4a;
   --text-light: #8a7a6a;
@@ -397,10 +397,10 @@ ul {
 }
 
 .navbar.scrolled {
-  background: rgba(26, 10, 0, .95);
+  background: linear-gradient(90deg, #c4136e 0%, #e84840 45%, #f07820 100%);
   backdrop-filter: blur(16px);
   padding: .8rem 2rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, .3)
+  box-shadow: 0 4px 30px rgba(196, 19, 110, .35)
 }
 
 .navbar-logo {
@@ -572,7 +572,7 @@ ul {
   justify-content: center;
   overflow: hidden;
   padding-top: 80px;
-  background-color: #fd9fc2
+  background-color: #c4136e
 }
 
 .hero-bg {
@@ -595,10 +595,10 @@ ul {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom,
-      #fd9fc2 0%,
-      #fd9fc2 15%,
-      rgba(253, 159, 194, 0.88) 36%,
-      rgba(253, 159, 194, 0.4) 45%,
+      #c4136e 0%,
+      #c4136e 15%,
+      rgba(196, 19, 110, 0.88) 36%,
+      rgba(196, 19, 110, 0.4) 45%,
       rgba(0, 0, 0, 0.04) 57%,
       rgba(0, 0, 0, 0.42) 80%,
       rgba(0, 0, 0, 0.8) 100%)
@@ -625,7 +625,7 @@ ul {
   margin-top: 2rem;
   padding: 1.5rem 3rem 6rem;
   max-width: 920px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(0.5px);
   -webkit-backdrop-filter: blur(0.5px);
   border-radius: 1.5rem
@@ -662,7 +662,7 @@ ul {
 }
 
 .hero-title-accent {
-  background: #750cc1;
+  background: #ffffffd6;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -977,9 +977,19 @@ ul {
 /* ===== TEAMS ===== */
 .teams {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-mid) 100%);
+  background: linear-gradient(to bottom, #7a0e37 0%, #6a1a10 60%, #b35200 100%);
   position: relative;
   overflow: hidden
+}
+
+.teams::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  right: 8%;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), rgba(255, 209, 102, 0.5), rgba(255, 255, 255, 0.35), transparent)
 }
 
 .teams-container {
@@ -1039,8 +1049,8 @@ ul {
 
 /* ===== ACTIVITIES ===== */
 .activities {
-  padding: 6rem 0;
-  background: var(--dark);
+  padding: 3rem 0;
+  background: linear-gradient(135deg, #8b1a12 0%, #4a0e08 100%);
   position: relative;
   overflow: hidden
 }
@@ -1131,7 +1141,7 @@ ul {
 /* ===== VIDEOS ===== */
 .videos {
   padding: 6rem 2rem;
-  background: linear-gradient(180deg, #fff0e0 0%, var(--off-white) 100%)
+  background: linear-gradient(180deg, #fce8d5 0%, var(--off-white) 100%)
 }
 
 .videos-container {
@@ -1414,7 +1424,7 @@ ul {
 /* ===== CONTACT ===== */
 .contact {
   padding: 6rem 2rem;
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-mid) 100%);
+  background: linear-gradient(135deg, #7a3200 0%, #4a1e00 100%);
   position: relative;
   overflow: hidden
 }
@@ -1577,7 +1587,7 @@ ul {
 
 /* ===== FOOTER ===== */
 .footer {
-  background: var(--dark);
+  background: linear-gradient(160deg, #5a0828 0%, #2d0414 100%);
   padding: 4rem 2rem 2rem;
   position: relative;
   overflow: hidden
@@ -1796,10 +1806,10 @@ ul {
 
   .hero-overlay {
     background: linear-gradient(to bottom,
-        #fd9fc2 0%,
-        #fd9fc2 140px,
-        rgba(253, 159, 194, 0.88) 170px,
-        rgba(253, 159, 194, 0.18) 280px,
+        #c4136e 0%,
+        #c4136e 140px,
+        rgba(196, 19, 110, 0.88) 170px,
+        rgba(196, 19, 110, 0.18) 280px,
         rgba(0, 0, 0, 0.0) 420px,
         rgba(0, 0, 0, 0.5) 80%,
         rgba(0, 0, 0, 0.9) 100%)

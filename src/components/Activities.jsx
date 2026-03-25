@@ -30,7 +30,7 @@ export default function Activities() {
   const cat = activityCategories.find(c => c.id === active);
 
   return (
-    <section id="activities" className="activities" style={{ padding: '6rem 0', background: 'var(--dark)' }}>
+    <section id="activities" className="activities" style={{ padding: '6rem 0', background: 'linear-gradient(to bottom, #b35200 0%, #b38800 55%, #7a6040 100%)' }}>
       {/* Section header */}
       <div style={{ textAlign: 'center', padding: '0 2rem', marginBottom: '3rem' }}>
         <RevealSection>

@@ -39,7 +39,16 @@ function Reveal({ children, delay = 0 }) {
   );
 }
 
+const MOBILE_IMG = 'https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774443608/Untitled_pfxmnc.jpg';
+const DESKTOP_IMG = 'https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774166823/cblc/backgrounds/grrrwhrgrwzeeqczk9tv.jpg';
+
 export default function About({ camp }) {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 580);
+  useEffect(() => {
+    const handler = () => setIsMobile(window.innerWidth < 580);
+    window.addEventListener('resize', handler);
+    return () => window.removeEventListener('resize', handler);
+  }, []);
   return (
     <section id="about" className="about">
       <div className="about-container">
@@ -55,7 +64,7 @@ export default function About({ camp }) {
           <Reveal delay={100}>
             <div className="about-image-wrap">
               <img
-                src="https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774166823/cblc/backgrounds/grrrwhrgrwzeeqczk9tv.jpg"
+                src={isMobile ? MOBILE_IMG : DESKTOP_IMG}
                 alt="Trại sinh Chuyên Bảo Lộc Camp"
                 className="about-image"
               />
