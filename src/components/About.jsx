@@ -39,15 +39,18 @@ function Reveal({ children, delay = 0 }) {
   );
 }
 
-const MOBILE_IMG = 'https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774443608/Untitled_pfxmnc.jpg';
+const MOBILE_IMG = 'https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774454424/Untitled1_s0jysy.jpg';
 const DESKTOP_IMG = 'https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774166823/cblc/backgrounds/grrrwhrgrwzeeqczk9tv.jpg';
 
 export default function About({ camp }) {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 580);
+  const [isMobile, setIsMobile] = useState(false);
+  const wrapRef = useRef();
   useEffect(() => {
-    const handler = () => setIsMobile(window.innerWidth < 580);
-    window.addEventListener('resize', handler);
-    return () => window.removeEventListener('resize', handler);
+    const observer = new ResizeObserver(([entry]) => {
+      setIsMobile(entry.contentRect.width < 580);
+    });
+    if (wrapRef.current) observer.observe(wrapRef.current);
+    return () => observer.disconnect();
   }, []);
   return (
     <section id="about" className="about">
@@ -62,7 +65,7 @@ export default function About({ camp }) {
 
         <div className="about-grid">
           <Reveal delay={100}>
-            <div className="about-image-wrap">
+            <div className="about-image-wrap" ref={wrapRef}>
               <img
                 src={isMobile ? MOBILE_IMG : DESKTOP_IMG}
                 alt="Trại sinh Chuyên Bảo Lộc Camp"

@@ -572,19 +572,16 @@ ul {
   justify-content: center;
   overflow: hidden;
   padding-top: 80px;
-  background-color: #c4136e
+  background-color: rgb(228, 192, 34)
 }
 
 .hero-bg {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0%;
-  bottom: 15%;
-  background-image: url('https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774166822/cblc/backgrounds/t3rsh0e5izryacnvhmqq.jpg');
-  background-size: cover;
+  inset: 0;
+  background-image: url('https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774166823/cblc/backgrounds/grrrwhrgrwzeeqczk9tv.jpg');
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center center;
 }
 
 .hero-bg:hover {
@@ -595,13 +592,11 @@ ul {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom,
-      #c4136e 0%,
-      #c4136e 15%,
-      rgba(196, 19, 110, 0.88) 36%,
-      rgba(196, 19, 110, 0.4) 45%,
-      rgba(0, 0, 0, 0.04) 57%,
-      rgba(0, 0, 0, 0.42) 80%,
-      rgba(0, 0, 0, 0.8) 100%)
+      rgba(0, 0, 0, 0.25) 0%,
+      rgba(0, 0, 0, 0.15) 25%,
+      rgba(0, 0, 0, 0.1) 55%,
+      rgba(0, 0, 0, 0.25) 82%,
+      rgba(0, 0, 0, 0.5) 100%)
 }
 
 .hero-particles {
@@ -1433,7 +1428,7 @@ ul {
   content: '';
   position: absolute;
   inset: 0;
-  background: url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=15') center/cover;
+  background: url('https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774190037/cblc/memories/tewg9rvx61qqlkt0vx1j.jpg') center/cover;
   opacity: .06
 }
 
@@ -1798,21 +1793,19 @@ ul {
 
 @media(max-width:768px) {
   .hero-bg {
-    top: 70px;
-    bottom: 0;
-    background-size: cover;
-    background-position: center 15%;
+    inset: 0;
+    background-image: url('https://res.cloudinary.com/dxtcn1wpn/image/upload/v1774454424/Untitled1_s0jysy.jpg');
+    background-size: 105%;
+    background-position: center center;
   }
 
   .hero-overlay {
     background: linear-gradient(to bottom,
-        #c4136e 0%,
-        #c4136e 140px,
-        rgba(196, 19, 110, 0.88) 170px,
-        rgba(196, 19, 110, 0.18) 280px,
-        rgba(0, 0, 0, 0.0) 420px,
-        rgba(0, 0, 0, 0.5) 80%,
-        rgba(0, 0, 0, 0.9) 100%)
+        rgba(0, 0, 0, 0.25) 0%,
+        rgba(0, 0, 0, 0.15) 25%,
+        rgba(0, 0, 0, 0.1) 55%,
+        rgba(0, 0, 0, 0.25) 82%,
+        rgba(0, 0, 0, 0.5) 100%)
   }
 
   .hero-content {
