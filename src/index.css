@@ -565,7 +565,6 @@ ul {
 
 /* ===== HERO ===== */
 .hero {
-  min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -812,7 +811,7 @@ ul {
 
 /* ===== ABOUT ===== */
 .about {
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
   background: var(--off-white);
   position: relative;
   overflow: hidden
@@ -972,7 +971,7 @@ ul {
 
 /* ===== TEAMS ===== */
 .teams {
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   background: linear-gradient(to bottom, #7a0e37 0%, #6a1a10 60%, #b35200 100%);
   position: relative;
   overflow: hidden
@@ -1053,7 +1052,7 @@ ul {
 
 /* ===== GALLERY ===== */
 .gallery {
-  padding: 6rem 2rem;
+  padding: 3em 2rem;
   background: var(--off-white)
 }
 
@@ -1136,7 +1135,7 @@ ul {
 
 /* ===== VIDEOS ===== */
 .videos {
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
   background: linear-gradient(180deg, #fce8d5 0%, var(--off-white) 100%)
 }
 
@@ -1229,7 +1228,7 @@ ul {
 
 /* ===== PREVIOUS YEARS ===== */
 .prev-years {
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
   background: var(--off-white)
 }
 
@@ -1419,7 +1418,7 @@ ul {
 
 /* ===== CONTACT ===== */
 .contact {
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
   background: linear-gradient(135deg, #7a3200 0%, #4a1e00 100%);
   position: relative;
   overflow: hidden
@@ -1584,7 +1583,7 @@ ul {
 /* ===== FOOTER ===== */
 .footer {
   background: linear-gradient(160deg, #5a0828 0%, #2d0414 100%);
-  padding: 4rem 2rem 2rem;
+  padding: 3rem 2rem 2rem;
   position: relative;
   overflow: hidden
 }

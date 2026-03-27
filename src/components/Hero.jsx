@@ -56,7 +56,7 @@ export default function Hero({ camp }) {
           <span>CBLC · Chuyên Bảo Lộc · Since 2019</span>
         </div>
 
-        <div className="hero-year">THPT Chuyên Bảo Lộc · Lâm Đồng</div>
+        <div className="hero-year"></div>
 
         <h1 className="hero-title">
           Summer Shine<br />
