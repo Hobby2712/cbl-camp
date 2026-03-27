@@ -17,7 +17,21 @@ function RevealSection({ children, delay = 0, className = '' }) {
 
 export default function PreviousYears({ campsData, selectedYear, setSelectedYear, currentYear, setLightboxImg }) {
   const years = Object.keys(campsData).map(Number).sort((a, b) => b - a);
-  const camp = campsData[selectedYear];
+  const [displayYear, setDisplayYear] = useState(selectedYear);
+  const [fading, setFading] = useState(false);
+
+  useEffect(() => {
+    if (selectedYear !== displayYear) {
+      setFading(true);
+      const t = setTimeout(() => {
+        setDisplayYear(selectedYear);
+        setFading(false);
+      }, 220);
+      return () => clearTimeout(t);
+    }
+  }, [selectedYear]);
+
+  const camp = campsData[displayYear];
 
   return (
     <section id="prev-years" className="prev-years">
@@ -47,7 +61,7 @@ export default function PreviousYears({ campsData, selectedYear, setSelectedYear
         </RevealSection>
 
         <RevealSection delay={200}>
-          <div className="year-content" key={selectedYear}>
+          <div className="year-content" style={{ opacity: fading ? 0 : 1, transform: fading ? 'translateY(6px)' : 'translateY(0)', transition: 'opacity 0.22s ease, transform 0.22s ease' }}>
             <div className="year-content-hero">
               <img src={camp.images[0]?.url} alt={camp.theme} />
               <div className="year-content-hero-overlay">
@@ -175,7 +189,12 @@ export default function PreviousYears({ campsData, selectedYear, setSelectedYear
                         position: 'relative',
                         zIndex: 1,
                       }}
-                      onClick={() => setSelectedYear(y)}
+                      onClick={() => {
+                        setSelectedYear(y);
+                        setTimeout(() => {
+                          document.querySelector('.year-content-hero')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }, 320);
+                      }}
                     >
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
                         <span style={{ fontSize: '1.3rem', fontWeight: 900, color: selectedYear === y ? 'var(--gold)' : 'var(--forest-deep)' }}>{y}</span>
