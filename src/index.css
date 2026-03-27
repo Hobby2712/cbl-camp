@@ -428,9 +428,9 @@ ul {
 }
 
 .navbar-logo-name {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 1rem;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
   color: white
 }
 
@@ -623,8 +623,8 @@ ul {
   background: rgba(0, 0, 0, 0.52);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  border-radius: 1.5rem;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3)
+  border-radius: 1.5rem 1.5rem 0 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3)
 }
 
 .hero-badge {
