@@ -591,11 +591,11 @@ ul {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom,
-      rgba(0, 0, 0, 0.25) 0%,
-      rgba(0, 0, 0, 0.15) 25%,
-      rgba(0, 0, 0, 0.1) 55%,
-      rgba(0, 0, 0, 0.25) 82%,
-      rgba(0, 0, 0, 0.5) 100%)
+      rgb(220, 113, 25, 1) 0%,
+      rgb(167, 121, 6, 0.2) 25%,
+      rgb(234, 201, 38, 0.2) 55%,
+      rgba(236, 112, 112, 0.2) 82%,
+      rgb(249, 2, 60, 1) 100%)
 }
 
 .hero-particles {
@@ -1801,11 +1801,11 @@ ul {
 
   .hero-overlay {
     background: linear-gradient(to bottom,
-        rgba(0, 0, 0, 0.25) 0%,
-        rgba(0, 0, 0, 0.15) 25%,
-        rgba(0, 0, 0, 0.1) 55%,
-        rgba(0, 0, 0, 0.25) 82%,
-        rgba(0, 0, 0, 0.5) 100%)
+        rgb(220, 113, 25, 1) 0%,
+        rgb(167, 121, 6, 0.2) 25%,
+        rgb(234, 201, 38, 0.2) 55%,
+        rgba(236, 112, 112, 0.2) 82%,
+        rgba(249, 2, 64, 0.5) 100%)
   }
 
   .hero-content {
