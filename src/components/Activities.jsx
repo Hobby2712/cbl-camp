@@ -108,12 +108,13 @@ export default function Activities() {
               }} />
               <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '2rem' }}>
                 <div style={{
+                  borderRadius: 'var(--radius-lg)',
                   display: 'inline-block',
-                  background: cat.color,
-                  color: 'white',
+                  background: "rgba(255,255,255,.18)",
+                  color: "white",
                   fontWeight: 800,
                   fontSize: '2rem',
-                  padding: '4px 2px',
+                  padding: '10px 12px',
                   lineHeight: 1,
                   marginBottom: '0.5rem',
                 }}>
